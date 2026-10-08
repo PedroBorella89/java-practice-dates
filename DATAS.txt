@@ -1,0 +1,28 @@
+DATE TIME FORMATTER PADRÃO
+
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+=====================================================================
+
+CONVERTER STRING EM DATA
+
+String text = "08/10/2026"
+
+LocalDate date = LocalDate.parse(text, dtf);
+
+=====================================================================
+
+CONVERTER STRING DIGITADA PELO USUÁRIO EM DATA
+
+LocalDate date = LocalDate.parse(sc.nextLine(), dtf);
+
+=====================================================================
+
+CONVERTER DATA EM STRING
+
+LocalDate date = LocalDate.of(2026, 10, 08);
+
+String text = date.format(dtf);
+
+Para imprimir direto
+Sout("Converted data: " + date.format(dtf);
